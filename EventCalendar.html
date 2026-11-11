@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Event Calendar | UWM Esports</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="calendar-page">
+
+  <!-- Gold band with the dark triangle -->
+  <header class="band band-top">
+    <div class="band-triangle"></div>
+  </header>
+
+  <main class="calendar-panel">
+    <div class="calendar-line"></div>
+
+    <section class="calendar-box">
+      <h1 class="calendar-heading">Event Calendar</h1>
+
+      <div class="calendar">
+
+        <!-- Arrows and month name -->
+        <div class="calendar-top">
+          <button class="calendar-arrow">&larr;</button>
+          <h2 class="calendar-month">October 2026</h2>
+          <button class="calendar-arrow">&rarr;</button>
+        </div>
+
+        <table class="calendar-table">
+          <thead>
+            <tr>
+              <th class="calendar-weekday">SUN</th>
+              <th class="calendar-weekday">MON</th>
+              <th class="calendar-weekday">TUE</th>
+              <th class="calendar-weekday">WED</th>
+              <th class="calendar-weekday">THU</th>
+              <th class="calendar-weekday">FRI</th>
+              <th class="calendar-weekday">SAT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="calendar-day"></td>
+              <td class="calendar-day"></td>
+              <td class="calendar-day"></td>
+              <td class="calendar-day"></td>
+              <td class="calendar-day">1</td>
+              <td class="calendar-day">2</td>
+              <td class="calendar-day">3</td>
+            </tr>
+            <tr>
+              <td class="calendar-day">4</td>
+              <td class="calendar-day">5</td>
+              <td class="calendar-day">6</td>
+              <td class="calendar-day">7</td>
+              <td class="calendar-day">8</td>
+              <td class="calendar-day">9</td>
+              <td class="calendar-day">10</td>
+            </tr>
+            <tr>
+              <td class="calendar-day">11</td>
+              <!-- A day with an event: a button that opens the pop-out below -->
+              <td class="calendar-day">
+                <button class="event-day" popovertarget="event-oct-12">12</button>
+              </td>
+              <td class="calendar-day">13</td>
+              <td class="calendar-day">14</td>
+              <td class="calendar-day">15</td>
+              <td class="calendar-day">16</td>
+              <td class="calendar-day">17</td>
+            </tr>
+            <tr>
+              <td class="calendar-day">18</td>
+              <td class="calendar-day">19</td>
+              <td class="calendar-day">20</td>
+              <td class="calendar-day">21</td>
+              <td class="calendar-day">22</td>
+              <td class="calendar-day">23</td>
+              <td class="calendar-day">24</td>
+            </tr>
+            <tr>
+              <td class="calendar-day">25</td>
+              <td class="calendar-day">26</td>
+              <td class="calendar-day">27</td>
+              <td class="calendar-day">28</td>
+              <td class="calendar-day">29</td>
+              <td class="calendar-day">30</td>
+              <td class="calendar-day">31</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <a class="home-button" href="index.html">Home</a>
+
+    <!-- Pop-out for October 12. The id here must match the button's popovertarget. -->
+    <div class="event-popup" id="event-oct-12" popover>
+      <h2 class="popup-date">Monday, Oct. 12th</h2>
+      <div class="popup-box">
+        <article class="popup-event">
+          <h3 class="popup-title">Valorant Team Practice</h3>
+          <p class="popup-details">6-10pm @Union Esports Lounge</p>
+          <p class="popup-note">*Required Practice for Varsity Team Members.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

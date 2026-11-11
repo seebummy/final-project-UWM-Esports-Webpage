@@ -2179,3 +2179,82 @@ x
   width: 24px;
   height: 30px;
 }
+
+/* ============================================================
+   MEMBERS PAGE (Figma frame "EventCalendarPopout" - Overwatch)
+   The Figma frame was drawn at half size, so every number from
+   Figma was doubled. The popout itself reuses .event-popup,
+   .popup-date, .popup-box and .popup-event from the Event
+   Calendar section. The Home button reuses .home-button.
+   ============================================================ */
+
+/* ---------- MEMBERS PAGE: BACKGROUND ---------- */
+.members-page {
+  background-color: var(--dusty-black);
+}
+
+/* ---------- MEMBERS PAGE: WHITE PANEL ---------- */
+.members-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 82px 0;
+  margin-bottom: 58px;
+  background-color: var(--white);
+  border-radius: 0 0 100px 100px;
+}
+
+.members-heading {
+  margin: 0 0 28px 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+  text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* The button that opens the popout */
+.members-button {
+  width: 412px;
+  height: 50px;
+  border: none;
+  background-color: var(--light-gold);
+  border-radius: 100px;
+  color: var(--black);
+  font-family: "Jaldi", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.members-button:hover {
+  background-color: var(--bright-gold);
+  transform: scale(1.05);
+}
+
+/* ---------- MEMBERS PAGE: POPOUT TEXT ---------- */
+.member-label {
+  margin: 0 0 24px 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.member-team {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.member-list {
+  margin: 0 0 24px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.member-item {
+  font-size: 16px;
+  line-height: 24px;
+} 

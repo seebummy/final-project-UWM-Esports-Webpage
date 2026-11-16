@@ -1,125 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Overwatch | UWM Esports</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="overwatch-page">
 
-  <!-- Looped background video, with a gold tint on top.
-       "muted" is required or the browser will block autoplay. -->
-  <video class="popout-video" src="videos/overwatch.mp4" autoplay loop muted></video>
-  <div class="popout-video-tint"></div>
-
-  <!-- Gold band with the dark triangle -->
-  <header class="band popout-band">
+  <header class="band band-top">
     <div class="band-triangle"></div>
   </header>
 
-  <main class="popout-panel">
-    <div class="popout-tint">
-      <article class="popout-column">
+  <main class="overwatch-panel">
 
-        <!-- Title with gold line -->
-        <div class="popout-title-bar">
-          <h1 class="popout-heading">Overwatch</h1>
-          <div class="popout-line"></div>
-        </div>
+    <header class="overwatch-title-bar">
+      <h1 class="overwatch-title">Overwatch</h1>
+      <div class="overwatch-title-line"></div>
+    </header>
 
-        <!-- Photo with the two stars on its corner -->
-        <div class="popout-photo-wrap">
-          <img class="popout-photo" src="images/image23.png" alt="Overwatch heroes">
-          <img class="star-large" src="images/star1.svg" alt="">
-          <img class="star-small" src="images/star2.svg" alt="">
-        </div>
+    <section class="overwatch-photo-row">
+      <img class="overwatch-photo" src="images/image-23.png" alt="Overwatch heroes in battle">
+      <div class="overwatch-stars">
+        <img class="star-small" src="images/star-2.svg" alt="">
+        <img class="star-big" src="images/star-1.svg" alt="">
+      </div>
+    </section>
 
-        <!-- Description -->
-        <section class="popout-card">
-          <div class="popout-card-bar"></div>
-          <p class="popout-card-text">Overwatch is a 4v4 hero shooter that originally launched to the public in 2014. Throughout the decade, the game has had two iterations and been the foundation for esport shooters.</p>
-          <p class="popout-card-text">UWM houses teams of 6, with 4 active players per roster and two “subs”- these are players that can be swapped in when a main team member is unable to play. We have two teams per divisions- JV and Varsity. Teams are larger this year due to a popularity increase.</p>
-        </section>
+    <section class="overwatch-card">
+      <hr class="card-line">
+      <p class="overwatch-text">Overwatch is a 4v4 hero shooter that originally launched to the public in 2014. Throughout the decade, the game has had two iterations and been the foundation for esport shooters.</p>
+      <p class="overwatch-text">UWM houses teams of 6, with 4 active players per roster and two “subs” - these are players that can be swapped in when a main team member is unable to play. We have two teams per division - JV and Varsity. Teams are larger this year due to a popularity increase.</p>
+    </section>
 
-        <!-- Links -->
-        <nav>
-          <ul class="popout-links">
-            <li>
-              <!-- Opens the Members popout on top of this page -->
-              <button class="popout-link" popovertarget="members-popout">Members <img class="popout-arrow" src="images/arrow.svg" alt=""></button>
-            </li>
-            <li>
-              <a class="popout-link" href="event-calendar.html">Event Calendar <img class="popout-arrow" src="images/arrow.svg" alt=""></a>
-            </li>
-            <li>
-              <a class="popout-link" href="overwatch-games.html">Our Titles <img class="popout-arrow" src="images/arrow.svg" alt=""></a>
-            </li>
-            <li>
-              <a class="popout-link" href="index.html">Home <img class="popout-arrow" src="images/arrow.svg" alt=""></a>
-            </li>
-          </ul>
-        </nav>
+    <nav>
+      <ul class="games-links">
+        <li>
+          <a class="overwatch-link" href="members.html">Members
+            <img class="games-arrow" src="images/arrow.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="overwatch-link" href="calendar.html">Event Calendar
+            <img class="games-arrow" src="images/arrow.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="overwatch-link" href="games.html">Our Titles
+            <img class="games-arrow" src="images/arrow.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="overwatch-link" href="index.html">Home
+            <img class="games-arrow" src="images/arrow.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-      </article>
-    </div>
   </main>
-
-  <!-- OVERWATCH MEMBERS POPOUT -->
-  <div class="popout" popover id="members-popout">
-
-    <main class="members-panel">
-
-      <h2 class="members-heading">Overwatch Members</h2>
-
-      <article class="members-card">
-        <div class="roster">
-
-          <h3 class="roster-label">Players:</h3>
-
-          <!-- Varsity team -->
-          <section class="team">
-            <h4 class="team-name">UWM Black - Varsity</h4>
-            <ul class="team-list">
-              <li>@Just Noah - JustNoah</li>
-              <li>@shinboner - shinbone</li>
-              <li>@marcos - frustrater</li>
-              <li>@meow - distinctish</li>
-              <li>@Xandaddio - Xeevee</li>
-            </ul>
-            <p class="sub-label">Subs</p>
-            <ul class="team-list">
-              <li>@Divine/Spencer - Divine</li>
-              <li>@GrumpyHP - GrumpyHP</li>
-            </ul>
-          </section>
-
-          <!-- JV team -->
-          <section>
-            <h4 class="team-name">UWM White - JV</h4>
-            <ul class="team-list">
-              <li>@Saiyan_Roar - SaiyanRoar</li>
-              <li>@Face - GuyWithAFace</li>
-              <li>@Phantasmically - Phantasmic</li>
-              <li>@Rice - FlaxSeal</li>
-              <li>@dmsnaz - dmsnaz</li>
-              <li>@Arc - Arctic</li>
-              <li>@LessyTheAlien👽 - Lessy</li>
-              <li>@Jimxx - JIMXX</li>
-              <li>@skips - Michael</li>
-            </ul>
-          </section>
-
-        </div>
-      </article>
-
-      <a class="home-button members-home-button" href="index.html">Home</a>
-
-    </main>
-
-    <div class="members-stripe"></div>
-
-  </div>
 
 </body>
 </html>

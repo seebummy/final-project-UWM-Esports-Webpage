@@ -350,11 +350,9 @@ body {
   align-items: center;
   width: 112px;
   height: 100px;
-  padding: 0;
-  border: none;
   background-color: var(--light-gold);
   border-radius: 40px;
-  cursor: pointer;
+  text-decoration: none;
   transition: transform 0.2s, background-color 0.2s;
 }
 
@@ -843,4 +841,124 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+}
+
+/* ============================================================
+   OVERWATCH PAGE (Figma frame "OurTitlesPopout")
+   The Figma frame was drawn at half size, so every number from
+   Figma was doubled. It reuses the gold band, .card-line, the
+   stars, and the arrow link list from other pages.
+   ============================================================ */
+
+.overwatch-page {
+  background-color: var(--dusty-black);
+}
+
+/* ---------- OVERWATCH PAGE: WHITE PANEL ---------- */
+/* image-22.png is the blurry Overwatch picture behind everything */
+.overwatch-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 66px 0 104px 0;
+  margin-bottom: 76px;
+  background-color: var(--white);
+  background-image: url("images/image-22.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 100px 100px;
+}
+
+/* ---------- OVERWATCH PAGE: TITLE ---------- */
+.overwatch-title-bar {
+  box-sizing: border-box;
+  width: 492px;
+  height: 100px;
+  margin-bottom: 38px;
+  padding-left: 26px;
+  background-color: var(--white);
+}
+
+.overwatch-title {
+  margin: 4px 0 0 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.overwatch-title-line {
+  width: 364px;
+  height: 6px;
+  margin-top: 8px;
+  background-color: var(--light-gold);
+}
+
+/* ---------- OVERWATCH PAGE: PHOTO AND STARS ---------- */
+.overwatch-photo-row {
+  display: flex;
+  align-items: flex-end;
+  width: 492px;
+  margin-bottom: 38px;
+}
+
+/* The photo has a see-through gold tint in Figma.
+   Add it to the image itself when you export it. */
+.overwatch-photo {
+  flex: none;
+  width: 446px;
+  height: 252px;
+  border-radius: 80px;
+  object-fit: cover;
+}
+
+/* The stars overlap the photo's right edge and hang below it */
+.overwatch-stars {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 0 -38px -64px;
+}
+
+/* ---------- OVERWATCH PAGE: TEXT CARD ---------- */
+.overwatch-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 492px;
+  padding: 28px 0 40px 0;
+  margin-bottom: 72px;
+  background-color: var(--light-gold);
+  border-radius: 40px;
+}
+
+.overwatch-text {
+  width: 410px;
+  margin: 0 0 12px 0;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* ---------- OVERWATCH PAGE: LINKS ---------- */
+.overwatch-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 412px;
+  height: 50px;
+  background-color: var(--white);
+  border-radius: 100px;
+  color: var(--black);
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.overwatch-link:hover {
+  background-color: var(--pale-gold);
+  transform: scale(1.05);
 }

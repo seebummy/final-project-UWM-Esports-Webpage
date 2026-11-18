@@ -855,18 +855,46 @@ body {
 }
 
 /* ---------- OVERWATCH PAGE: WHITE PANEL ---------- */
-/* image-22.png is the blurry Overwatch picture behind everything */
+/* position: relative keeps the video inside the panel.
+   overflow: hidden keeps the video inside the rounded corners. */
 .overwatch-panel {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 66px 0 104px 0;
   margin-bottom: 76px;
   background-color: var(--white);
-  background-image: url("images/image-22.png");
-  background-size: cover;
-  background-position: center;
   border-radius: 0 0 100px 100px;
+}
+
+/* The video fills the whole panel and sits behind everything else.
+   The lower opacity lets the white panel fade it, like in Figma. */
+.overwatch-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+/* The video fills the whole panel and sits behind everything else.
+   The lower opacity lets the white panel fade it, like in Figma. */
+.overwatch-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
 }
 
 /* ---------- OVERWATCH PAGE: TITLE ---------- */
